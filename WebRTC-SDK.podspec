@@ -9,13 +9,13 @@ Pod::Spec.new do |spec|
   DESC
 
   spec.homepage     = "https://github.com/webrtc-sdk/Specs"
-  spec.license      = :type => 'BSD', :file => 'WebRTC/LICENSE'
+  spec.license      = { :type => 'BSD', :file => 'WebRTC/LICENSE' }
   spec.author       = "webrtc-sdk"
   spec.ios.deployment_target = '13.0'
   spec.osx.deployment_target = '10.14'
 
-  spec.source       = :git => "https://github.com/Paddington12345/webRTC-SDK.git", :tag => spec.version.to_s
-  spec.vendored_frameworks = "WebRTC.framework"  # Point to your framework file
+  spec.source       = { :git => "https://github.com/Paddington12345/webRTC-SDK.git", :tag => spec.version.to_s }
+  spec.vendored_frameworks = "WebRTC.framework"
 
   # Specify header files if needed
   spec.public_header_files = "WebRTC.framework/Headers/*.h"
