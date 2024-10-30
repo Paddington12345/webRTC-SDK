@@ -13,6 +13,8 @@ Pod::Spec.new do |spec|
     spec.license      = { :type => 'BSD', :file => 'WebRTC.xcframework/LICENSE' }
     spec.author       = "webrtc-sdk"
     spec.ios.deployment_target = '13.0'
+    spec.source_files      = 'Classes/**/*'
+    spec.public_header_files = 'Classes/**/*.h'
   
     spec.source       = { :http => "https://github.com/Paddington12345/webRTC-SDK/blob/main/WebRTC.xcframework.zip" }
     spec.vendored_frameworks = "WebRTC.xcframework"
