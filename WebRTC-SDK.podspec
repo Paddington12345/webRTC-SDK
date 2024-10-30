@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
     spec.source_files      = 'Classes/**/*'
     spec.public_header_files = 'Classes/**/*.h'
   
-    spec.source       = { :http => "https://github.com/Paddington12345/webRTC-SDK/blob/main/WebRTC.xcframework.zip" }
+    spec.source       = { :http => "https://github.com/Paddington12345/webRTC-SDK/raw/main/WebRTC.xcframework.zip" }
     spec.vendored_frameworks = "WebRTC.xcframework"
     
   end
